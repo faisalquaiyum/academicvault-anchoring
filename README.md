@@ -33,5 +33,5 @@ is in Appendix A of the paper. Check files with `sha256sum -c SHA256SUMS.txt`.
 Certificate arrivals are synthetic and gas costs per transaction are placeholders,
 so results describe relative policy behaviour, not absolute cost.
 
-## Licence
+## License
 Code: MIT. Data: CC BY 4.0. See `LICENSE`.

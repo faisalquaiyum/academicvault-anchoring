@@ -1,0 +1,173 @@
+{
+  "created_utc": "2026-11-25T07:39:36.553913+00:00",
+  "runtime_minutes": 82.6,
+  "python": "3.13.18",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "xgboost": "3.4.1",
+    "matplotlib": "3.10.0",
+    "cryptography": "50.0.2"
+  },
+  "config": {
+    "SEED": 42,
+    "STEP_MIN": 5,
+    "SLA_HOURS": 24,
+    "N_WINDOWS": 4,
+    "GUARD_STEPS": 6,
+    "PCTL": 0.2,
+    "THR_LOOKBACK": 288,
+    "FOLD_MODE": "monthly",
+    "VAL_DAYS": 60,
+    "BOOT_B": 2000,
+    "RATES": [
+      0.05,
+      0.2,
+      1.0
+    ],
+    "CAPS": [
+      50,
+      200,
+      1000
+    ],
+    "MAIN_RATE": 1.0,
+    "MAIN_CAP": 50,
+    "SEEDS_SWEEP": [
+      17,
+      41,
+      89
+    ],
+    "RL_MAX_EP": 600,
+    "RL_EP_STEPS": 600,
+    "RL_CKPTS": [
+      100,
+      300,
+      600
+    ],
+    "RL_ALPHA0": 0.2,
+    "RL_GAMMA": 0.995,
+    "RL_DELAY": 0.005,
+    "RL_CLIP": 5.0,
+    "RL_EXPLORING_STARTS": true,
+    "RL_N_SEEDS": 5,
+    "RL_DELAY_GRID": [
+      0.0005,
+      0.002,
+      0.005,
+      0.02,
+      0.05
+    ],
+    "PGRID": "[0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5  0.55 0.6  0.65 0.7\n 0.75 0.8  0.85 0.9  0.95]",
+    "HZ": [
+      12,
+      36,
+      72,
+      144,
+      288
+    ],
+    "RAMP_PLO": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "RAMP_PHI": [
+      0.5,
+      0.8
+    ],
+    "RAMP_K": [
+      1,
+      3
+    ],
+    "WV_MARGINS": [
+      0.0,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      3.0,
+      6.0
+    ],
+    "V11_MINB": [
+      1,
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "WV_TRAIN_STRIDE": 6,
+    "RULE_INTERVALS": [
+      12,
+      24,
+      36,
+      48,
+      60,
+      72,
+      144
+    ],
+    "RULE_MINB": [
+      1,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50
+    ],
+    "WAIT_BUDGETS": {
+      "poisson": [
+        80,
+        100,
+        120
+      ],
+      "bursty": [
+        150,
+        200,
+        250
+      ],
+      "real": [
+        100,
+        150,
+        200
+      ]
+    },
+    "INDIVIDUAL_GAS": 90000,
+    "BATCH_BASE_GAS": 100000,
+    "PER_CRED_GAS": 0,
+    "GAS_SOURCE": "PLACEHOLDER (not measured)",
+    "DATA_SOURCE_NOTE": "TODO: name the fee-data provider / query used to obtain the CSVs",
+    "USING_SYNTHETIC": false
+  },
+  "folds": [
+    "2025-01-01",
+    "2025-02-01",
+    "2025-03-01",
+    "2025-04-01",
+    "2025-05-01",
+    "2025-06-01",
+    "2025-07-01",
+    "2025-08-01",
+    "2025-09-01",
+    "2025-10-01",
+    "2025-11-01",
+    "2025-12-01",
+    "2026-01-01",
+    "2026-02-01",
+    "2026-03-01",
+    "2026-04-01",
+    "2026-05-01",
+    "2026-06-01",
+    "2026-07-01",
+    "2026-08-01"
+  ],
+  "workloads": [
+    "poisson 1.0/step",
+    "bursty 0.2/step + bursts"
+  ]
+}

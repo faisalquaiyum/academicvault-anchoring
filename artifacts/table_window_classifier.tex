@@ -1,0 +1,14 @@
+\begin{tabular}{lrrrll}
+\toprule
+ & accuracy & top2_acc & regret_pct_of_random & 95% CI & diff vs hour prior (pts) \\
+method &  &  &  &  &  \\
+\midrule
+random (expected) & 0.2500 & 0.5000 & 100.0000 & - & - \\
+yesterday & 0.4670 & NaN & 51.4720 & [35.6, 67.7] & +20.91 [+11.87, +30.20] \\
+hour prior & 0.5620 & NaN & 30.5340 & [16.7, 44.6] & - \\
+logreg & 0.5660 & 0.8850 & 30.4210 & [17.4, 44.2] & -0.02 [-3.59, +3.32] \\
+xgboost & 0.5720 & 0.8880 & 28.7000 & [16.9, 41.4] & -1.60 [-7.38, +3.80] \\
+selected & 0.5680 & 0.8840 & 28.1860 & [16.4, 40.9] & -2.11 [-7.79, +3.32] \\
+oracle & 1.0000 & 1.0000 & 0.0000 & - & - \\
+\bottomrule
+\end{tabular}

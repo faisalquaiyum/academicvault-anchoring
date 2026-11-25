@@ -1,0 +1,20 @@
+{
+  "501a7d6bd62b0a4a84751ba20b3206ca2cdbe8d864754138535b4bca2424dbf2": {
+    "batch_id": "501a7d6bd62b0a4a84751ba20b3206ca2cdbe8d864754138535b4bca2424dbf2",
+    "merkle_root": "7a255feb554604379aed1828001ea7a5331c0160e42a6c563265d1771e32f9ce",
+    "leaf_count": 50,
+    "step": 272142,
+    "fee_gwei": 0.03972380328,
+    "tx": "SIMULATED_5b624fbc5715d5ad4a2d47c8ccc962f7dd80c96480dbb91586e61fca10b9522d",
+    "network": "LOCAL_SIMULATION"
+  },
+  "9e842acbdd4884e150d88969afa033641b5ea73d1bef3050b42ccfa89bf1ce07": {
+    "batch_id": "9e842acbdd4884e150d88969afa033641b5ea73d1bef3050b42ccfa89bf1ce07",
+    "merkle_root": "bc02ded7797844c9bc1f21d9c70081683d9bf2c03c7d6487fe2e9e2edd63c794",
+    "leaf_count": 14,
+    "step": 272227,
+    "fee_gwei": 0.07869286776,
+    "tx": "SIMULATED_9e7fc7aa7143b07038ea7dc0c5a56f7b1a713e7897168431b4de54f9201c1712",
+    "network": "LOCAL_SIMULATION"
+  }
+}

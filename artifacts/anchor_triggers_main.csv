@@ -1,0 +1,10 @@
+policy,guard,full,policy_rule,policy-initiated %
+P1 Fixed 12 h,0,10096,60,0.6
+P2 Threshold (no ML),44,5227,8496,61.7
+P2b Fee-dep. queue threshold,52,2902,13235,81.8
+P3 Window random,4,7794,6644,46.0
+P4 Window hour prior,0,7625,6202,44.9
+P5 Window ML,0,7626,6165,44.7
+P6 Window oracle label,1,7219,7243,50.1
+P7 RL (Q-learning),21,8652,2996,25.7
+P8 Clairvoyant (future-fee),39,7189,4363,37.6

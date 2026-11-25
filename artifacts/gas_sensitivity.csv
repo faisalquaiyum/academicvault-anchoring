@@ -1,0 +1,8 @@
+policy,0,2000,5000
+P1 Fixed 12 h,97.79,95.58,92.26
+P2 Threshold (no ML),97.63,95.56,92.44
+P2b Fee-dep. queue threshold,97.41,95.38,92.34
+P4 Window hour prior,97.38,95.17,91.86
+P5 Window ML,97.44,95.23,91.93
+P7 RL (Q-learning),97.67,95.52,92.3
+P8 Clairvoyant (future-fee),98.08,96.28,93.58

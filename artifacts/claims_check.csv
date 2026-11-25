@@ -1,0 +1,22 @@
+claim,status,evidence
+Batching cuts modelled cost by >= 90 % versus anchoring every certificate immediately,SUPPORTED,reduction 97.11-98.08 % across policies (main config); CONDITIONAL on placeholder gas
+"The ML window classifier beats the hour-of-day prior (regret, pooled walk-forward)",NOT SUPPORTED (CI includes 0),"diff -2.11 pts [-7.79, +3.32]; beats hour prior in 12/20 folds"
+ML-driven window policy (P5) is cheaper than the hour-prior policy (P4),NOT SUPPORTED (CI includes 0),"cost diff -1.04 % [-3.4, +2.3] over 20 folds"
+A perfect window label (P6) makes the window policy cheaper than the hour prior (P4),"OPPOSITE (A costlier, CI above 0)","cost diff +4.75 % [+0.7, +8.7] over 20 folds"
+ML-driven window policy (P5) is cheaper than the plain fee threshold (P2),"OPPOSITE (A costlier, CI above 0)","cost diff +11.70 % [+2.2, +23.6] over 20 folds"
+Timing headroom is small: even a clairvoyant reference adds <= 0.5 percentage points of reduction over the best realistic policy,SUPPORTED,P8 minus best realistic policy = +0.29 pp (main config)
+The RL agent makes its own anchor decisions (not only guard/full-queue anchors),SUPPORTED,25.7 % of RL anchors were policy-initiated
+RL results are stable across independent training seeds (relative sd <= 5 %),NOT SUPPORTED,max relative sd over seeds = 28.7 %
+"RL is cheaper than the best tuned rule at the same average-wait budget (validation-selected, fold-paired CI below 0)",NOT SUPPORTED,"RL clearly cheaper in 0/6 (workload, budget) cells; clearly costlier in 6; indistinguishable in 0"
+RL matches (is not worse than) the best tuned rule at the same budget,NOT SUPPORTED,RL clearly costlier in 6/6 cells
+Every simulated run meets the 24 h SLA,SUPPORTED,"min SLA compliance = 100.0 %; 4,440 invariant checks"
+Batching cuts modelled cost by >= 90 % at every SLA tested (main configuration),SUPPORTED,"min reduction by SLA: 6 h: 96.96 %, 12 h: 97.10 %, 24 h: 97.11 %, 48 h: 97.10 %"
+Clairvoyant headroom stays <= 0.5 percentage points at every SLA tested,SUPPORTED,"P8 gap by SLA: 6 h: +0.44 pp, 12 h: +0.35 pp, 24 h: +0.29 pp, 48 h: +0.29 pp"
+Slack-awareness alone (P9) is cheaper than a tuned static percentile rule (P2p) at equal wait,MIXED,"clearly cheaper in 1/6 (workload, wait) cells; clearly costlier in 1; indistinguishable in 4"
+The slack-ramp rule (P9) is cheaper than the best static rule at equal wait,NOT SUPPORTED,"clearly cheaper in 0/6 (workload, wait) cells; clearly costlier in 1; indistinguishable in 5"
+The ML wait-value trigger (P10) is cheaper than the same trigger with an hour-of-day prior (P10p) at equal wait,MIXED,"clearly cheaper in 5/6 (workload, wait) cells; clearly costlier in 0; indistinguishable in 1"
+ML adds value on top of slack-awareness (P10 cheaper than P9) at equal wait,MIXED,"clearly cheaper in 1/6 (workload, wait) cells; clearly costlier in 0; indistinguishable in 5"
+The ML wait-value trigger (P10) is cheaper than the best static rule at equal wait,NOT SUPPORTED,"clearly cheaper in 0/6 (workload, wait) cells; clearly costlier in 0; indistinguishable in 6"
+The ML wait-value trigger (P10) is cheaper than tabular RL (P7) at equal wait,MIXED,"clearly cheaper in 5/6 (workload, wait) cells; clearly costlier in 0; indistinguishable in 1"
+"Even the true value of waiting (P10o, ceiling) makes the trigger clearly cheaper than the best static rule at equal wait",MIXED,"clearly cheaper in 1/6 (workload, wait) cells; clearly costlier in 0; indistinguishable in 5"
+"The ML forecast of the value of waiting is closer to the truth than the hour-of-day prior (MAE, test folds)",SUPPORTED,"ML better in a majority of folds at 5/5 horizons; skill vs prior: 1 h: +17.8%, 3 h: +29.6%, 6 h: +37.5%, 12 h: +42.8%, 24 h: +43.1%"

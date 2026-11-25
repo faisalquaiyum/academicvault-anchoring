@@ -1,0 +1,10 @@
+item,status,how to fix
+Real fee data (not the synthetic fallback),OK,
+"Gas model measured, not placeholder",TODO,create measured_gas.csv (testnet / Hardhat gas report); absolute savings depend on it
+Fee-data source documented,TODO,fill DATA_SOURCE_NOTE in the config cell
+Real issuance trace used,TODO,add issuance_times.csv; until then workloads are synthetic
+>= 3 independent RL seeds per setting,OK,
+>= 12 walk-forward folds (more statistical power),OK,
+All scheduler invariants passed,OK,
+SLA sensitivity run (6/12/24/48 h),OK,
+[v11] Slack-aware timing section run (7i),OK,

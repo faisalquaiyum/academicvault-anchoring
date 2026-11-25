@@ -1,0 +1,11 @@
+workload,family,setting,cost_eth,cost_sd_over_rl_seeds,wait_min,wait_sd_over_rl_seeds,transactions
+bursty 0.2/step + bursts,P7 RL,delay=0.0005,0.0119,0.0007,304.073,11.7186,99.01
+bursty 0.2/step + bursts,P7 RL,delay=0.002,0.0118,0.0002,279.8814,10.1885,105.71
+bursty 0.2/step + bursts,P7 RL,delay=0.005,0.0177,0.0016,189.9351,12.2106,163.6267
+bursty 0.2/step + bursts,P7 RL,delay=0.02,0.0306,0.007,140.2969,13.9077,223.71
+bursty 0.2/step + bursts,P7 RL,delay=0.05,0.0257,0.0074,166.6756,33.6753,205.79
+poisson 1.0/step,P7 RL,delay=0.0005,0.0228,0.0001,123.3254,1.3279,179.5433
+poisson 1.0/step,P7 RL,delay=0.002,0.0229,0.0002,121.6815,1.6816,179.7033
+poisson 1.0/step,P7 RL,delay=0.005,0.0231,0.0003,120.5073,3.7598,184.0867
+poisson 1.0/step,P7 RL,delay=0.02,0.0235,0.0009,119.7338,2.0301,192.2167
+poisson 1.0/step,P7 RL,delay=0.05,0.028,0.0051,112.7886,3.3691,326.38
